@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books by Pureart2000 - Pure Art 2000 Software Developers</title>
+<meta name="description" content="Books by Pureart2000: The Secrets, Tips and Tricks of Muse.ai series, AI The Digital Awakening, Master Your Cellphone, and the $12.99 AI guidebooks.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#090914; color:#fff; font-family:'Segoe UI', Arial, sans-serif; }
+  a { text-decoration:none; }
+  .wrap { max-width:1440px; margin:0 auto; padding:0 48px; }
+  .topbar { display:flex; align-items:center; justify-content:space-between; padding:18px 48px; background:#0d0c1a; position:sticky; top:0; z-index:10; }
+  .logo { font-size:24px; font-weight:800; letter-spacing:.5px; color:#fff; }
+  .logo span { color:#f5c518; }
+  .nav a { color:#b3b3c9; margin:0 14px; font-size:15px; }
+  .nav a:hover { color:#fff; }
+  .nav a.here { color:#f5c518; font-weight:700; }
+  .btn-live { background:#f5c518; color:#0d0c1a; font-weight:700; padding:12px 26px; border-radius:24px; font-size:15px; white-space:nowrap; }
+  .hero { position:relative; border-radius:24px; overflow:hidden; margin-top:28px;
+    background:
+      radial-gradient(900px 420px at 85% -10%, rgba(245,197,24,.22), rgba(245,197,24,0) 60%),
+      radial-gradient(1000px 600px at -10% 110%, rgba(109,40,217,.55), rgba(109,40,217,0) 60%),
+      linear-gradient(115deg, #2e1065 0%, #14002b 55%, #090914 100%); }
+  .hero .content { padding:64px 48px; }
+  .hero .kicker { color:#f5c518; font-weight:700; font-size:14px; letter-spacing:2px; margin-bottom:16px; }
+  .hero h1 { font-size:52px; font-weight:800; line-height:1.05; }
+  .hero h1 .gold { color:#f5c518; }
+  .hero p { margin-top:18px; font-size:19px; color:#e3e3ee; max-width:680px; line-height:1.5; }
+  h2.sec { font-size:32px; font-weight:800; margin:64px 0 6px; }
+  .rule { width:64px; height:5px; background:#f5c518; border-radius:3px; margin-bottom:26px; }
+  .sub { color:#b3b3c9; font-size:17px; margin:-14px 0 26px; max-width:900px; line-height:1.5; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+  .product { background:#16132a; border-radius:18px; padding:32px 30px 34px; display:flex; flex-direction:column; }
+  .product.hot { background:#211d3d; border:2px solid #f5c518; }
+  .product .tag { color:#f5c518; font-weight:700; font-size:13px; letter-spacing:1px; margin-bottom:10px; }
+  .product h3 { font-size:23px; line-height:1.3; }
+  .product .price { font-size:36px; font-weight:800; margin:14px 0 10px; }
+  .product p { color:#b3b3c9; font-size:15px; line-height:1.55; flex:1; }
+  .product .btn { margin-top:24px; text-align:center; font-weight:700; font-size:14px; padding:13px 0; border-radius:22px; background:#6d28d9; color:#fff; letter-spacing:.5px; }
+  .product.hot .btn { background:#f5c518; color:#0d0c1a; }
+  .tier { background:#16132a; border-radius:18px; padding:30px 28px 34px; border-top:6px solid #6d28d9; display:flex; flex-direction:column; }
+  .tier.featured { background:#211d3d; border-top-color:#f5c518; }
+  .tier .name { color:#f5c518; font-weight:700; font-size:15px; letter-spacing:1px; }
+  .tier .price { font-size:40px; font-weight:800; margin:10px 0 14px; }
+  .tier p { color:#b3b3c9; font-size:15px; line-height:1.55; flex:1; }
+  .tier .btn { margin-top:26px; text-align:center; font-weight:700; font-size:13px; padding:13px 0; border-radius:22px; background:#6d28d9; color:#fff; letter-spacing:.5px; }
+  .tier.featured .btn { background:#f5c518; color:#0d0c1a; }
+  .hub { background:linear-gradient(115deg, #2e1065, #14002b); border-radius:18px; padding:40px 36px; display:flex; align-items:center; gap:32px; margin-top:64px; }
+  .hub .txt { flex:1; }
+  .hub h3 { font-size:26px; margin-bottom:10px; }
+  .hub p { color:#d8d8e8; font-size:16px; line-height:1.55; }
+  .hub .btns { display:flex; flex-direction:column; gap:14px; flex-shrink:0; }
+  .btn-gold { background:#f5c518; color:#0d0c1a; font-weight:700; padding:14px 30px; border-radius:24px; font-size:15px; text-align:center; }
+  .btn-outline { border:2px solid #6d28d9; color:#fff; font-weight:700; padding:14px 30px; border-radius:24px; font-size:15px; text-align:center; }
+  footer { border-top:2px solid #35324d; margin-top:72px; padding:26px 48px 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:#b3b3c9; font-size:15px; }
+  footer a { color:#b3b3c9; }
+  footer a:hover { color:#fff; }
+  footer .credit { color:#f5c518; font-weight:700; }
+  @media (max-width: 980px) {
+    .wrap { padding:0 20px; }
+    .topbar { padding:14px 20px; }
+    .nav { display:none; }
+    .hero h1 { font-size:36px; }
+    .hero .content { padding:40px 24px; }
+    .grid3, .grid2 { grid-template-columns:1fr; }
+    .hub { flex-direction:column; align-items:flex-start; }
+    footer { padding:26px 20px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="logo" href="https://pureart2000.com/">PUREART<span>2000</span></a>
+  <div class="nav">
+    <a href="https://pureart2000.com/">Home</a>
+    <a class="here" href="https://pureart2000.com/f/books-by-pureart2000">Books</a>
+    <a href="https://levelupdailypureart2000.wordpress.com/video-hub/">Video Hub</a>
+    <a href="https://pureart2000gamer.com/">Gaming</a>
+  </div>
+  <a class="btn-live" href="https://stan.store/Pureart2000">Visit the Store</a>
+</div>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="content">
+      <div class="kicker">BOOKS BY PUREART2000</div>
+      <h1>Books that put AI<br>to <span class="gold">work for you.</span></h1>
+      <p>Story-driven guides, practical hacks and ready-to-use AI systems — written to save you time from the very first chapter. Pick your starting point below.</p>
+    </div>
+  </div>
+
+  <h2 class="sec">Featured</h2>
+  <div class="rule"></div>
+  <div class="grid2">
+    <div class="product hot">
+      <div class="tag">THE SECRETS, TIPS AND TRICKS OF CLAUDE.AI — BOOK #1</div>
+      <h3>The Budget That Balanced Itself</h3>
+      <div class="price">$25.99</div>
+      <p>A story-based guide to letting AI organize your money — bills, budgets and the leaks you never see — one simple system at a time. Educational, practical, and built for real life.</p>
+      <a class="btn" href="https://stan.store/Pureart2000/p/the-budget-that-balanced-itself">GET THE BOOK</a>
+    </div>
+    <div class="product">
+      <div class="tag">THE FULL LIBRARY</div>
+      <h3>Everything in the Stan Store</h3>
+      <div class="price">Stan</div>
+      <p>Every book, guide and digital pack in one place — including the Nyx Halloween Character Pack and the Wasteland Heavy Gear guide. New titles land here first.</p>
+      <a class="btn" href="https://stan.store/Pureart2000">BROWSE THE STORE</a>
+    </div>
+  </div>
+
+  <h2 class="sec">On Amazon</h2>
+  <div class="rule"></div>
+  <p class="sub">The two Kindle titles that built the Level Up library — available on Amazon.</p>
+  <div class="grid2">
+    <div class="product">
+      <div class="tag">AI THE DIGITAL AWAKENING</div>
+      <h3>AI: The Digital Awakening</h3>
+      <p>The book that started it all — a gripping look at a world waking up to artificial intelligence, and what it means for the people learning to use it first.</p>
+      <a class="btn" href="https://a.co/d/06l8MjOX">READ IT ON AMAZON</a>
+    </div>
+    <div class="product">
+      <div class="tag">MASTER YOUR CELLPHONE</div>
+      <h3>Cellphone Hacks</h3>
+      <p>Hidden settings, shortcuts and practical phone tricks that make your cellphone work harder for you — explained in plain language, no tech degree needed.</p>
+      <a class="btn" href="https://www.amazon.com/dp/B0HGQ5F7RP?tag=pureart200009-20">GET IT ON AMAZON</a>
+    </div>
+  </div>
+
+  <h2 class="sec">The $12.99 Guidebooks</h2>
+  <div class="rule"></div>
+  <p class="sub">Short, focused and built to be used the same day you open them. Instant download.</p>
+  <div class="grid3">
+    <div class="product">
+      <div class="tag">CHATGPT</div>
+      <h3>ChatGPT Prompts</h3>
+      <div class="price">$12.99</div>
+      <p>Ready-to-use ChatGPT prompts that save time on writing, planning and everyday work — copy, paste, done.</p>
+      <a class="btn" href="https://buy.stripe.com/6oU6oH738dC68nK4kF7bW00">GET THE GUIDE</a>
+    </div>
+    <div class="product">
+      <div class="tag">AI ART</div>
+      <h3>AI Art Guide</h3>
+      <div class="price">$12.99</div>
+      <p>Styles, prompts and workflows for creating AI art that looks intentional — and stays consistent from image to image.</p>
+      <a class="btn" href="https://buy.stripe.com/eVqeVdcns7dIfQc4kF7bW01">GET THE GUIDE</a>
+    </div>
+    <div class="product">
+      <div class="tag">CLAUDE</div>
+      <h3>Claude Sheet</h3>
+      <div class="price">$12.99</div>
+      <p>The Claude AI cheat sheet — the patterns and shortcuts that turn Claude into a pro-level assistant.</p>
+      <a class="btn" href="https://buy.stripe.com/4gM5kDcns2XsdI42cx7bW02">GET THE SHEET</a>
+    </div>
+  </div>
+
+  <h2 class="sec">The 7-Book System</h2>
+  <div class="rule"></div>
+  <p class="sub">Go deeper with the full system — buy one, bundle them, or take the whole studio.</p>
+  <div class="grid3">
+    <div class="tier">
+      <div class="name">SINGLE</div>
+      <div class="price">$49</div>
+      <p>Start with one complete system and put it to work right away.</p>
+      <a class="btn" href="https://buy.stripe.com/bJe5kD3QW9lQcE018t7bW04">GET SINGLE</a>
+    </div>
+    <div class="tier featured">
+      <div class="name">BUNDLE</div>
+      <div class="price">$197</div>
+      <p>The full bundle — every book in the system, one price, nothing held back.</p>
+      <a class="btn" href="https://buy.stripe.com/9B628revA69EcE0cRb7bW05">GET THE BUNDLE</a>
+    </div>
+    <div class="tier">
+      <div class="name">STUDIO</div>
+      <div class="price">$349</div>
+      <p>The studio edition for creators building a real library of AI systems.</p>
+      <a class="btn" href="https://buy.stripe.com/eVq3cv1IO2XscE02cx7bW06">GET STUDIO</a>
+    </div>
+  </div>
+
+  <div class="hub">
+    <div class="txt">
+      <h3>Not sure where to start?</h3>
+      <p>Every book, store and channel also lives on the Linktree — one page, everything Pureart2000.</p>
+    </div>
+    <div class="btns">
+      <a class="btn-gold" href="https://linktr.ee/pureart2000">Open Linktree</a>
+      <a class="btn-outline" href="https://pureart2000.com/">Back to Home</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="credit">Created by Pureart2000</div>
+  <div>
+    <a href="https://pureart2000.com/">Home</a> ·
+    <a href="https://stan.store/Pureart2000">Store</a> ·
+    <a href="https://linktr.ee/pureart2000">Linktree</a> ·
+    <a href="https://pureart2000gamer.com/">Gaming</a>
+  </div>
+</footer>
+
+</body>
+</html>
