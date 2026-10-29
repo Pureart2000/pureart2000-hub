@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FADE FACTORY — Modern Fade Studio</title>
+<meta name="description" content="Fade Factory: a modern fade studio. Skin fades, designs, and line-ups booked in the app and finished in 30. Walk-ins when chairs open.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0b;color:#f2f2f2;font-family:'Arial Black',Arial,sans-serif;line-height:1.55}
+  a{text-decoration:none;color:inherit}
+  p,li{font-family:Arial,sans-serif}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;max-width:1160px;margin:0 auto;border-bottom:1px solid #26262a}
+  .brand{font-size:24px;letter-spacing:1px}
+  .brand span{color:#c6f542}
+  .links a{margin-left:22px;font-family:Arial,sans-serif;font-weight:700;font-size:14px;color:#bdbdc4;text-transform:uppercase}
+  .links a:hover{color:#c6f542}
+  .book{background:#c6f542;color:#0a0a0b!important;padding:11px 22px;border-radius:6px}
+  .hero{padding:84px 0 70px;background:repeating-linear-gradient(-45deg,#0a0a0b 0 26px,#0e0e10 26px 52px);border-bottom:3px solid #c6f542}
+  .hero h1{font-size:78px;line-height:.98;text-transform:uppercase}
+  .hero h1 .hollow{color:transparent;-webkit-text-stroke:2px #c6f542}
+  .hero p{margin-top:22px;max-width:520px;font-size:18px;color:#bdbdc4}
+  .cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{background:#c6f542;color:#0a0a0b;padding:15px 30px;font-weight:900;text-transform:uppercase;font-size:15px;border-radius:6px;letter-spacing:.5px}
+  .btn.dark{background:#17171a;color:#f2f2f2;border:1px solid #333338}
+  .marquee{background:#c6f542;color:#0a0a0b;overflow:hidden;white-space:nowrap;padding:10px 0;font-size:15px;letter-spacing:2px}
+  section{padding:72px 0}
+  h2{font-size:40px;text-transform:uppercase}
+  h2 span{color:#c6f542}
+  .sub{color:#bdbdc4;max-width:560px;margin-top:10px;font-size:16px}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
+  .svc{background:#131315;border:1px solid #26262a;border-radius:12px;padding:24px 20px}
+  .svc:hover{border-color:#c6f542}
+  .svc .num{color:#c6f542;font-size:13px;letter-spacing:2px}
+  .svc h3{font-size:19px;margin:10px 0 8px;text-transform:uppercase}
+  .svc p{color:#9a9aa2;font-size:14px;min-height:64px}
+  .svc .pr{font-size:26px;margin-top:14px}
+  .svc .pr small{font-size:13px;color:#9a9aa2;font-family:Arial,sans-serif}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+  .step{background:#131315;border-radius:12px;padding:26px;border-left:5px solid #c6f542}
+  .step b{font-size:30px;color:#c6f542}
+  .step h3{margin:8px 0 6px;text-transform:uppercase;font-size:17px}
+  .step p{color:#9a9aa2;font-size:14px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+  .quote{background:#131315;border-radius:12px;padding:24px}
+  .quote p{font-style:italic;color:#d8d8de;font-size:15px}
+  .quote .who{margin-top:14px;font-size:13px;color:#c6f542;text-transform:uppercase;letter-spacing:1px;font-family:Arial,sans-serif;font-weight:700}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:42px}
+  .vbox{background:#c6f542;color:#0a0a0b;border-radius:12px;padding:30px}
+  .vbox.alt{background:#131315;color:#f2f2f2;border:1px solid #26262a}
+  .vbox h3{text-transform:uppercase;font-size:20px;margin-bottom:10px}
+  .vbox p{color:inherit;opacity:.85;font-size:15px}
+  .band{text-align:center;padding:60px 24px;border-top:1px solid #26262a}
+  .band h2{margin-bottom:10px}
+  .band p{color:#bdbdc4;margin-bottom:24px}
+  footer{text-align:center;padding:26px 20px 38px;color:#77777f;font-size:13px;font-family:Arial,sans-serif}
+  footer .credit{color:#c6f542;font-weight:700;margin-top:6px}
+  footer a{color:#c6f542;text-decoration:underline}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.steps,.quotes,.visit{grid-template-columns:1fr}.hero h1{font-size:48px}.links{display:none}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">FADE<span>FACTORY</span></div>
+  <div class="links">
+    <a href="#services">Services</a><a href="#how">How It Works</a><a href="#reviews">Reviews</a><a href="#visit" class="book">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Sharp fades.<br><span class="hollow">Zero</span> waiting.</h1>
+    <p>Book in the app, walk in, sit down. Precision skin fades, freestyle designs and beard work — most chairs done in 30 minutes, every cut photo-checked before you leave.</p>
+    <div class="cta"><a class="btn" href="#visit">Book Your Chair</a><a class="btn dark" href="#services">See Prices</a></div>
+  </div>
+</header>
+<div class="marquee">SKIN FADES ✂ LINE-UPS ✂ FREESTYLE DESIGNS ✂ BEARD SCULPT ✂ KIDS CUTS ✂ OPEN 7 DAYS ✂ SKIN FADES ✂ LINE-UPS ✂ FREESTYLE DESIGNS ✂ BEARD SCULPT ✂</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>The <span>Line-Up</span></h2>
+    <p class="sub">Straightforward pricing. No upsells at the chair — pick your service, pick your barber, done.</p>
+    <div class="grid">
+      <div class="svc"><div class="num">01</div><h3>Skin Fade</h3><p>Zero-blend fade, razor-finished edges, styled and photo-checked.</p><div class="pr">$30 <small>/ 30 min</small></div></div>
+      <div class="svc"><div class="num">02</div><h3>Fade + Design</h3><p>Any fade plus freestyle part, lines or custom design work.</p><div class="pr">$40 <small>/ 45 min</small></div></div>
+      <div class="svc"><div class="num">03</div><h3>Cut + Beard</h3><p>Full cut with beard sculpt, hot towel and oil finish.</p><div class="pr">$45 <small>/ 50 min</small></div></div>
+      <div class="svc"><div class="num">04</div><h3>The Reset</h3><p>Buzz cut, line-up, brow clean-up. In and out at lunch.</p><div class="pr">$22 <small>/ 20 min</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background:#0e0e10">
+  <div class="wrap">
+    <h2>How It <span>Works</span></h2>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Book in 20 seconds</h3><p>Pick your barber and time online. We hold your chair for 10 minutes past the slot — traffic happens.</p></div>
+      <div class="step"><b>2</b><h3>Show your reference</h3><p>Bring a photo or pick from the in-shop look book. Your barber confirms the plan before clippers touch hair.</p></div>
+      <div class="step"><b>3</b><h3>Leave photo-ready</h3><p>Every cut ends with a mirror check under studio lighting — the same light your selfies get.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>Chair <span>Talk</span></h2>
+    <div class="quotes">
+      <div class="quote"><p>"Booked at 12:40, in the chair at 1, back at work by 1:45 with the cleanest fade I've had in this city."</p><div class="who">Jordan K. — ★★★★★</div></div>
+      <div class="quote"><p>"Showed them a design from Instagram fully expecting 'we can't do that.' They did it better than the photo."</p><div class="who">Chris D. — ★★★★★</div></div>
+      <div class="quote"><p>"The app tells you your barber's wait in real time. Walked in as a walk-in on a Tuesday — zero wait, great cut."</p><div class="who">Sam O. — ★★★★★</div></div>
+    </div>
+    <div class="visit" id="visit">
+      <div class="vbox"><h3>The Studio</h3><p>88 Mercer Ave, Unit 4 · Open 7 days, 9am–9pm<br>(555) 204-8830 · @fadefactory.example</p></div>
+      <div class="vbox alt"><h3>First visit?</h3><p>New clients get $5 off any service over $30 — mention the site when you book. Students save 15% Tue–Thu with ID.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <h2>Want a website like this?</h2>
+  <p>Pureart2000 builds it for your business — packages from $390.</p>
+  <a class="btn" href="https://pureart2000.com">Get Your Website</a>
+</div>
+
+<footer>
+  <div>Fade Factory — a fictional demo barbershop created to showcase website design.</div>
+  <div class="credit">Created by <a href="https://pureart2000.com">Pureart2000</a></div>
+</footer>
+</body>
+</html>

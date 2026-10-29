@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nonno's Table — Family Italian Kitchen</title>
+<meta name="description" content="Nonno's Table: a cozy family Italian restaurant. Handmade pasta, Sunday sauce, and a table that's always got room for one more.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#fdf6ec;color:#43302a;font-family:'Trebuchet MS','Segoe UI',sans-serif;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .topstrip{background:#a33327;color:#fdf6ec;text-align:center;padding:8px 16px;font-size:14px;letter-spacing:.4px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;max-width:1120px;margin:0 auto}
+  .brand{font-family:Georgia,serif;font-size:27px;font-weight:700;color:#a33327}
+  .brand span{color:#5c7a3d}
+  .links a{margin-left:24px;font-weight:600;color:#6b4a3f;font-size:15px}
+  .links a:hover{color:#a33327}
+  .callbtn{background:#a33327;color:#fff!important;padding:10px 20px;border-radius:999px}
+  .hero{background:radial-gradient(600px 260px at 85% 10%,rgba(233,180,76,.35),transparent 60%),linear-gradient(180deg,#fdeed3,#fdf6ec);padding:66px 0 74px}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  .hero h1{font-family:Georgia,serif;font-size:52px;line-height:1.12;color:#7c2d22}
+  .hero h1 em{color:#5c7a3d}
+  .hero p{margin-top:18px;font-size:18px;color:#6b4a3f;max-width:480px}
+  .cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{background:#a33327;color:#fff;padding:14px 28px;border-radius:999px;font-weight:700;box-shadow:0 4px 0 #7c2d22}
+  .btn.alt{background:#fff;color:#a33327;border:2px solid #a33327;box-shadow:none}
+  .herocard{background:#fff;border:2px dashed #d9a441;border-radius:18px;padding:16px;transform:rotate(2deg)}
+  section{padding:72px 0}
+  h2{font-family:Georgia,serif;font-size:36px;color:#7c2d22;text-align:center}
+  .sub{text-align:center;color:#8a6a5c;max-width:600px;margin:10px auto 0}
+  .checkers{height:14px;background:repeating-linear-gradient(90deg,#a33327 0 28px,#fdf6ec 28px 56px);opacity:.85;border-radius:3px;max-width:1120px;margin:0 auto}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 18px rgba(124,45,34,.08);border-top:5px solid #d9a441}
+  .card h3{font-family:Georgia,serif;color:#7c2d22;font-size:20px;margin-bottom:8px}
+  .card p{color:#6b4a3f;font-size:15px}
+  .card .tag{display:inline-block;background:#eef3e2;color:#5c7a3d;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+  .menulist{max-width:820px;margin:40px auto 0;background:#fff;border-radius:16px;padding:12px 34px;box-shadow:0 6px 18px rgba(124,45,34,.08)}
+  .item{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #f1e2cd;gap:14px}
+  .item:last-child{border-bottom:none}
+  .item h3{font-size:17px;color:#43302a}
+  .item p{font-size:14px;color:#8a6a5c}
+  .item .pr{font-family:Georgia,serif;font-weight:700;color:#a33327;font-size:17px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .quote{background:#fdeed3;border-radius:16px;padding:26px;font-style:italic;color:#6b4a3f}
+  .quote .who{margin-top:14px;font-style:normal;font-weight:700;color:#7c2d22;font-size:14px}
+  .visit{background:#5c7a3d;color:#fdf6ec;text-align:center;padding:60px 24px;border-radius:22px}
+  .visit h2{color:#fdf6ec}
+  .visit p{margin:10px auto 24px;max-width:520px;color:#e6edd6}
+  .band{text-align:center;padding:56px 24px}
+  .band h2{margin-bottom:8px}
+  .band p{color:#8a6a5c;margin-bottom:22px}
+  footer{text-align:center;padding:30px 20px 40px;color:#8a6a5c;font-size:14px}
+  footer .credit{color:#a33327;font-weight:700;margin-top:6px}
+  footer a{color:#a33327;text-decoration:underline}
+  @media(max-width:840px){.hero .wrap,.cards,.quotes{grid-template-columns:1fr}.hero h1{font-size:38px}.links{display:none}}
+</style>
+</head>
+<body>
+<div class="topstrip">🍝 Sunday Sauce Sundays — kids eat free, 12–6pm · Mangia!</div>
+<nav>
+  <div class="brand">Nonno's <span>Table</span></div>
+  <div class="links">
+    <a href="#favorites">Favorites</a><a href="#menu">Menu</a><a href="#family">Our Family</a><a href="#visit" class="callbtn">Call to Book</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Pull up a chair.<br>You're <em>family</em> here.</h1>
+      <p>Three generations of the Benedetti family, one long table, and pasta rolled by hand every single morning. This is Nonno's Table — the Italian kitchen our neighborhood grew up in.</p>
+      <div class="cta"><a class="btn" href="#visit">Book the Family Table</a><a class="btn alt" href="#menu">See the Menu</a></div>
+    </div>
+    <div class="herocard">
+      <svg width="100%" height="290" viewBox="0 0 440 290" role="img" aria-label="Illustration of a bowl of pasta with steam">
+        <rect width="440" height="290" fill="#fdf6ec"/>
+        <path d="M120 178 a100 62 0 0 0 200 0 Z" fill="#a33327"/>
+        <ellipse cx="220" cy="178" rx="118" ry="18" fill="#c04535"/>
+        <path d="M140 168 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0" stroke="#e9b44c" stroke-width="7" fill="none" stroke-linecap="round"/>
+        <path d="M165 150 q14 -12 28 0 M215 146 q14 -12 28 0 M262 150 q14 -12 28 0" stroke="#e9b44c" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <circle cx="180" cy="160" r="10" fill="#7c2d22"/><circle cx="238" cy="156" r="10" fill="#7c2d22"/><circle cx="282" cy="164" r="9" fill="#7c2d22"/>
+        <path d="M186 108 q6 -18 -4 -30 M226 104 q8 -20 -2 -34 M266 108 q6 -18 -4 -30" stroke="#b9cba4" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M196 66 q24 -16 48 0 q-24 14 -48 0Z" fill="#5c7a3d"/>
+        <text x="220" y="262" text-anchor="middle" font-family="Georgia" font-style="italic" fill="#8a6a5c" font-size="15">nonna's sunday sauce — simmered 6 hours</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="checkers"></div>
+
+<section id="favorites">
+  <div class="wrap">
+    <h2>House Favorites</h2>
+    <p class="sub">The dishes that never leave the menu — because the regulars would riot.</p>
+    <div class="cards">
+      <div class="card"><span class="tag">SINCE 1987</span><h3>Sunday Sauce &amp; Meatballs</h3><p>Beef, pork and veal meatballs in a six-hour tomato sauce, served over rigatoni with a mountain of pecorino.</p></div>
+      <div class="card"><span class="tag">HANDMADE DAILY</span><h3>Nonna's Lasagna</h3><p>Twelve layers of fresh pasta, béchamel and ragù. Baked in the pan it arrives in — fight over the corner pieces.</p></div>
+      <div class="card"><span class="tag">KIDS LOVE IT</span><h3>Chicken Parm Night</h3><p>Every Wednesday: a chicken parm bigger than the plate, spaghetti, and garlic knots for the table. $16.95.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:#fff8ee">
+  <div class="wrap">
+    <h2>From the Kitchen</h2>
+    <p class="sub">Honest portions, family prices, recipes older than the restaurant.</p>
+    <div class="menulist">
+      <div class="item"><div><h3>Bruschetta della Casa</h3><p>grilled bread, marinated tomatoes, basil, whipped ricotta</p></div><div class="pr">$11</div></div>
+      <div class="item"><div><h3>Spaghetti &amp; Sunday Sauce</h3><p>with meatballs, sausage and a pork braciole</p></div><div class="pr">$21</div></div>
+      <div class="item"><div><h3>Eggplant Rollatini</h3><p>ricotta, mozzarella, marinara — Nonna's vegetarian legend</p></div><div class="pr">$18</div></div>
+      <div class="item"><div><h3>Shrimp Fra Diavolo</h3><p>a little heat, a lot of garlic, linguine</p></div><div class="pr">$24</div></div>
+      <div class="item"><div><h3>Tiramisu for Two</h3><p>espresso-soaked, made every morning, gone every night</p></div><div class="pr">$12</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="family">
+  <div class="wrap">
+    <h2>Our Family, Your Table</h2>
+    <p class="sub">Nonno Giuseppe arrived with a suitcase and his mother's recipe book. His grandchildren run the kitchen now — the recipe book is still on the pass, splattered and loved.</p>
+    <div class="quotes">
+      <div class="quote">"Tastes like my grandmother's kitchen smelled. We drive forty minutes every other Sunday and it's worth every mile."<div class="who">— The Alvarez Family</div></div>
+      <div class="quote">"They remembered my daughter's name and her order on our second visit. That's not service, that's family."<div class="who">— Marcus T.</div></div>
+      <div class="quote">"Booked the back room for Dad's 80th. They printed his photo on the menu. He cried. We all did."<div class="who">— Gina R.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="visit" id="visit">
+  <h2>Come Hungry, Leave Happy</h2>
+  <p>Open Tue–Sun, 11am–9pm · 227 Mulberry Lane · (555) 882-4417 · Groups of 8+ — call ahead and we'll push the tables together.</p>
+  <a class="btn" href="#visit" style="background:#fdf6ec;color:#5c7a3d;box-shadow:0 4px 0 #47602f">Call to Reserve</a>
+</div></div>
+
+<div class="band">
+  <h2>Want a website like this?</h2>
+  <p>Pureart2000 builds it for your business — packages from $390.</p>
+  <a class="btn" href="https://pureart2000.com">Get Your Website</a>
+</div>
+
+<footer>
+  <div>Nonno's Table — a fictional demo restaurant created to showcase website design.</div>
+  <div class="credit">Created by <a href="https://pureart2000.com">Pureart2000</a></div>
+</footer>
+</body>
+</html>

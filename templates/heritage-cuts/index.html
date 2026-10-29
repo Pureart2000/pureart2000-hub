@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage Cuts — Classic Barbershop</title>
+<meta name="description" content="Heritage Cuts: a classic American barbershop. Hot towel shaves, precision cuts and forty years of craft. Walk-ins welcome.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#f4efe4;color:#22304a;font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .pole{height:16px;background:repeating-linear-gradient(45deg,#a83232 0 18px,#f4efe4 18px 36px,#2c4a7c 36px 54px,#f4efe4 54px 72px)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;max-width:1100px;margin:0 auto}
+  .brand{font-size:24px;letter-spacing:2px;text-transform:uppercase}
+  .brand span{color:#a83232}
+  .links a{margin-left:24px;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:#5a6a86}
+  .links a:hover{color:#a83232}
+  .book{background:#22304a;color:#f4efe4!important;padding:10px 20px;border-radius:3px}
+  .hero{background:linear-gradient(160deg,#22304a,#16233a);color:#f4efe4;padding:76px 0}
+  .hero .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+  .hero .since{color:#d8b26a;letter-spacing:4px;font-size:13px;text-transform:uppercase}
+  .hero h1{font-size:56px;line-height:1.1;margin:14px 0 18px;font-weight:400}
+  .hero h1 em{color:#d8b26a}
+  .hero p{color:#c6cede;max-width:470px;font-size:18px}
+  .cta{margin-top:30px}
+  .btn{display:inline-block;background:#a83232;color:#fff;padding:14px 30px;letter-spacing:1px;text-transform:uppercase;font-size:14px;border-radius:3px;font-family:Arial,sans-serif;font-weight:700}
+  .btn.ghost{background:transparent;border:1px solid #d8b26a;color:#d8b26a;margin-left:12px}
+  section{padding:72px 0}
+  h2{font-size:34px;text-align:center;font-weight:400}
+  .orn{text-align:center;color:#a83232;letter-spacing:6px;margin:8px 0 6px}
+  .sub{text-align:center;color:#5a6a86;max-width:580px;margin:0 auto}
+  .services{max-width:780px;margin:44px auto 0}
+  .svc{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 6px;border-bottom:1px solid #ddd2ba}
+  .svc h3{font-size:20px}
+  .svc p{color:#5a6a86;font-size:14px;font-style:italic}
+  .svc .pr{font-size:20px;color:#a83232;white-space:nowrap}
+  .svc .dots{flex:1;border-bottom:2px dotted #c9bfa4;transform:translateY(-5px)}
+  .barbers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .barber{background:#fff;border:1px solid #ddd2ba;padding:28px 24px;text-align:center}
+  .barber .face{width:84px;height:84px;margin:0 auto 16px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .barber h3{font-size:20px}
+  .barber p{color:#5a6a86;font-size:14px;margin-top:6px}
+  .barber .yrs{color:#a83232;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-top:10px;font-family:Arial,sans-serif}
+  .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
+  .quote{background:#22304a;color:#e8e2d2;padding:30px 28px;font-style:italic}
+  .quote .who{margin-top:14px;font-style:normal;color:#d8b26a;font-size:13px;letter-spacing:1px;text-transform:uppercase;font-family:Arial,sans-serif}
+  .visit{background:#efe7d3;border:1px solid #ddd2ba;text-align:center;padding:52px 24px}
+  .visit p{color:#5a6a86;margin:10px auto 24px;max-width:520px}
+  .band{text-align:center;padding:56px 24px;background:#22304a;color:#f4efe4;margin-top:72px}
+  .band p{color:#c6cede;margin:8px 0 24px}
+  .band .btn{background:#d8b26a;color:#22304a}
+  footer{text-align:center;padding:28px 20px 38px;color:#5a6a86;font-size:14px}
+  footer .credit{color:#a83232;font-weight:700;margin-top:6px}
+  footer a{color:#a83232;text-decoration:underline}
+  @media(max-width:840px){.hero .wrap{grid-template-columns:1fr}.barbers,.quotes{grid-template-columns:1fr}.hero h1{font-size:40px}.links{display:none}}
+</style>
+</head>
+<body>
+<div class="pole"></div>
+<nav>
+  <div class="brand">Heritage <span>Cuts</span></div>
+  <div class="links">
+    <a href="#services">Services</a><a href="#barbers">Barbers</a><a href="#words">Word of Mouth</a><a href="#visit" class="book">Book a Chair</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="since">Est. 1984 · Walk-ins Welcome</div>
+      <h1>A proper cut,<br>the <em>old way</em> — done right.</h1>
+      <p>Hot towels, straight razors, and barbers who remember your name and your last cut. Heritage Cuts has kept this town looking sharp for over forty years.</p>
+      <div class="cta"><a class="btn" href="#visit">Book a Chair</a><a class="btn ghost" href="#services">See Services</a></div>
+    </div>
+    <svg width="150" height="330" viewBox="0 0 150 330" role="img" aria-label="Classic barber pole illustration">
+      <rect x="58" y="6" width="34" height="14" rx="4" fill="#d8b26a"/>
+      <rect x="40" y="20" width="70" height="270" rx="34" fill="#f4efe4" stroke="#d8b26a" stroke-width="3"/>
+      <clipPath id="poleclip"><rect x="43" y="23" width="64" height="264" rx="30"/></clipPath>
+      <g clip-path="url(#poleclip)">
+        <path d="M20 60 L130 20 L130 52 L20 92 Z" fill="#a83232"/>
+        <path d="M20 124 L130 84 L130 116 L20 156 Z" fill="#2c4a7c"/>
+        <path d="M20 188 L130 148 L130 180 L20 220 Z" fill="#a83232"/>
+        <path d="M20 252 L130 212 L130 244 L20 284 Z" fill="#2c4a7c"/>
+        <rect x="52" y="23" width="14" height="264" fill="#ffffff" opacity=".35"/>
+      </g>
+      <rect x="58" y="290" width="34" height="14" rx="4" fill="#d8b26a"/>
+      <rect x="66" y="304" width="18" height="20" fill="#8a6d35"/>
+    </svg>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Services &amp; Prices</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <p class="sub">Cash and card. Every cut finishes with a hot-lather neck shave — that's not an add-on, that's the job.</p>
+    <div class="services">
+      <div class="svc"><div><h3>The Heritage Cut</h3><p>consultation, precision cut, style &amp; finish</p></div><div class="dots"></div><div class="pr">$32</div></div>
+      <div class="svc"><div><h3>Hot Towel Shave</h3><p>three towels, straight razor, cold finish</p></div><div class="dots"></div><div class="pr">$38</div></div>
+      <div class="svc"><div><h3>Cut &amp; Shave — The Full Service</h3><p>the works, plus a scalp massage</p></div><div class="dots"></div><div class="pr">$60</div></div>
+      <div class="svc"><div><h3>Beard Sculpt &amp; Detail</h3><p>shape, razor lines, beard oil treatment</p></div><div class="dots"></div><div class="pr">$22</div></div>
+      <div class="svc"><div><h3>Young Gentleman (12 &amp; under)</h3><p>patient first-cut experience, certificate included</p></div><div class="dots"></div><div class="pr">$24</div></div>
+      <div class="svc"><div><h3>Father &amp; Son</h3><p>two chairs, side by side, Saturday mornings</p></div><div class="dots"></div><div class="pr">$50</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="barbers" style="background:#efe7d3">
+  <div class="wrap">
+    <h2>Meet Your Barbers</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <div class="barbers">
+      <div class="barber"><div class="face" style="background:#22304a"><svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="16" r="8" fill="#d8b26a"/><path d="M6 40 a16 12 0 0 1 32 0 Z" fill="#d8b26a"/></svg></div><h3>Walter "Walt" Brooks</h3><p>Founder. Master of the classic taper and the forty-minute conversation.</p><div class="yrs">41 years behind the chair</div></div>
+      <div class="barber"><div class="face" style="background:#a83232"><svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="16" r="8" fill="#f4efe4"/><path d="M6 40 a16 12 0 0 1 32 0 Z" fill="#f4efe4"/></svg></div><h3>Marcus Delgado</h3><p>Straight-razor specialist. His hot towel shave has a waiting list for a reason.</p><div class="yrs">18 years behind the chair</div></div>
+      <div class="barber"><div class="face" style="background:#2c4a7c"><svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="16" r="8" fill="#d8b26a"/><path d="M6 40 a16 12 0 0 1 32 0 Z" fill="#d8b26a"/></svg></div><h3>Tommy Okafor</h3><p>Third-generation barber. Skin fades, beard sculpting, zero rushed chairs.</p><div class="yrs">12 years behind the chair</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="words">
+  <div class="wrap">
+    <h2>Word of Mouth</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <div class="quotes">
+      <div class="quote">"My grandfather got cut here, my father got cut here, and now my son does. The chairs change less than the hairstyles do — that's the point."<div class="who">— Ray H., customer since 1993</div></div>
+      <div class="quote">"Booked the Full Service before my wedding. Walked out feeling like the best-dressed man alive. The hot towel shave is an experience every man should have once."<div class="who">— Daniel P., groom</div></div>
+    </div>
+    <div class="visit" id="visit" style="margin-top:44px">
+      <h2>Visit the Shop</h2>
+      <p>Tue–Fri 8am–6pm · Sat 7am–4pm · Closed Sun &amp; Mon<br>112 Main Street · (555) 410-1984 · Walk-ins welcome, appointments preferred</p>
+      <a class="btn" href="#visit">Book a Chair</a>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <h2>Want a website like this?</h2>
+  <p>Pureart2000 builds it for your business — packages from $390.</p>
+  <a class="btn" href="https://pureart2000.com">Get Your Website</a>
+</div>
+
+<footer>
+  <div>Heritage Cuts — a fictional demo barbershop created to showcase website design.</div>
+  <div class="credit">Created by <a href="https://pureart2000.com">Pureart2000</a></div>
+</footer>
+<div class="pole"></div>
+</body>
+</html>
