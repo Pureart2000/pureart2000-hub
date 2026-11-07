@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Web Design, Promotion Campaigns & AI Content | Pureart2000</title>
+<meta name="description" content="Pureart2000 services: web design & development, promotion campaigns and social media marketing, AI content & video production, SEO, digital products and online stores, content management and apps.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#090914; color:#fff; font-family:'Segoe UI', Arial, sans-serif; }
+  a { text-decoration:none; }
+  .wrap { max-width:1440px; margin:0 auto; padding:0 48px; }
+  /* Top bar */
+  .topbar { display:flex; align-items:center; justify-content:space-between; padding:18px 48px; background:#0d0c1a; position:sticky; top:0; z-index:10; }
+  .logo { font-size:24px; font-weight:800; letter-spacing:.5px; color:#fff; }
+  .logo span { color:#f5c518; }
+  .nav a { color:#b3b3c9; margin:0 14px; font-size:15px; }
+  .nav a:hover { color:#fff; }
+  .nav a.active { color:#f5c518; font-weight:700; }
+  .btn-live { background:#f5c518; color:#0d0c1a; font-weight:700; padding:12px 26px; border-radius:24px; font-size:15px; white-space:nowrap; }
+  /* Hero */
+  .hero { position:relative; border-radius:24px; overflow:hidden; margin-top:28px;
+    background:
+      radial-gradient(900px 420px at 85% -10%, rgba(245,197,24,.22), rgba(245,197,24,0) 60%),
+      radial-gradient(1000px 600px at -10% 110%, rgba(109,40,217,.55), rgba(109,40,217,0) 60%),
+      linear-gradient(115deg, #2e1065 0%, #14002b 55%, #090914 100%); }
+  .hero .content { padding:72px 48px; display:flex; flex-direction:column; justify-content:center; }
+  .hero .kicker { color:#f5c518; font-weight:700; font-size:14px; letter-spacing:2px; margin-bottom:16px; }
+  .hero h1 { font-size:56px; font-weight:800; line-height:1.08; }
+  .hero h1 .gold { color:#f5c518; }
+  .hero p { margin-top:18px; font-size:19px; color:#e3e3ee; max-width:680px; line-height:1.55; }
+  .cta-row { display:flex; gap:20px; margin-top:34px; flex-wrap:wrap; }
+  .btn-gold { background:#f5c518; color:#0d0c1a; font-weight:700; padding:14px 30px; border-radius:24px; font-size:15px; }
+  .btn-outline { border:2px solid #6d28d9; color:#fff; font-weight:700; padding:14px 30px; border-radius:24px; font-size:15px; }
+  /* Service rows */
+  .svc-row { display:flex; align-items:center; gap:40px; margin-top:72px; }
+  .svc-row.flip { flex-direction:row-reverse; }
+  .svc-visual { flex:0 0 38%; border-radius:20px; min-height:260px; display:flex; align-items:center; justify-content:center; font-size:92px;
+    background:
+      radial-gradient(500px 300px at 80% 0%, rgba(245,197,24,.18), rgba(245,197,24,0) 60%),
+      linear-gradient(135deg, #211d3d 0%, #14002b 100%); border-top:6px solid #6d28d9; }
+  .svc-row.gold .svc-visual { border-top-color:#f5c518; }
+  .svc-body { flex:1; }
+  .svc-body .kicker { color:#f5c518; font-weight:700; font-size:13px; letter-spacing:2px; margin-bottom:12px; }
+  .svc-body h2 { font-size:34px; font-weight:800; line-height:1.15; margin-bottom:14px; }
+  .svc-body p { color:#b3b3c9; font-size:16.5px; line-height:1.6; max-width:640px; }
+  .svc-body .go { color:#8b5cf6; font-weight:700; font-size:15px; margin-top:18px; display:inline-block; }
+  /* Price chips */
+  .chips { display:flex; gap:14px; flex-wrap:wrap; margin-top:22px; }
+  .chip { background:#16132a; border-radius:14px; padding:14px 18px; border-top:4px solid #6d28d9; }
+  .chip .n { color:#f5c518; font-weight:700; font-size:12px; letter-spacing:1px; }
+  .chip .p { font-size:24px; font-weight:800; margin-top:4px; }
+  .chip .p small { font-size:13px; color:#b3b3c9; font-weight:400; }
+  .fine { color:#b3b3c9; font-size:15px; margin-top:18px; }
+  /* Consultation band */
+  .consult { background:linear-gradient(115deg, #2e1065, #14002b); border-radius:18px; padding:52px 44px; margin-top:84px; text-align:center; border:2px solid #f5c518; }
+  .consult .kicker { color:#f5c518; font-weight:700; font-size:14px; letter-spacing:2px; margin-bottom:14px; }
+  .consult h2 { font-size:40px; font-weight:800; line-height:1.15; }
+  .consult p { color:#d8d8e8; font-size:17px; line-height:1.55; max-width:640px; margin:16px auto 0; }
+  .consult .cta-row { justify-content:center; }
+  /* Footer */
+  footer { border-top:2px solid #35324d; margin-top:72px; padding:26px 48px 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:#b3b3c9; font-size:15px; }
+  footer a { color:#b3b3c9; }
+  footer a:hover { color:#fff; }
+  footer .credit { color:#f5c518; font-weight:700; }
+  @media (max-width:1000px){ .wrap{padding:0 20px;} .topbar{padding:14px 20px;} .nav{display:none;} .hero h1{font-size:40px;} .hero .content{padding:48px 28px;} .svc-row,.svc-row.flip{flex-direction:column; align-items:stretch;} .svc-visual{min-height:180px; font-size:64px;} .consult{padding:40px 26px;} .consult h2{font-size:30px;} footer{padding:26px 20px 40px;} }
+  @media (max-width:560px){ .hero h1{font-size:32px;} }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="logo" href="https://pureart2000.com/">PURE<span>ART</span>2000</a>
+  <div class="nav">
+    <a href="https://pureart2000.com/#worlds">The Four Worlds</a><a href="https://pureart2000.com/#featured">Featured</a><a href="https://pureart2000.com/#gta">GTA VI</a><a href="https://pureart2000.com/#hub">Video Hub</a><a href="/services/" class="active">Services</a><a href="/templates/">Website Examples</a>
+  </div>
+  <a class="btn-live" href="https://stan.store/Pureart2000" target="_blank" rel="noopener">SHOP THE STORE</a>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="content">
+      <div class="kicker">SERVICES · WEB DESIGN · PROMOTION CAMPAIGNS · AI CONTENT</div>
+      <h1>Marketing that starts with <span class="gold">your goal</span> — and doesn't stop at pretty.</h1>
+      <p>Every service at Pureart2000 begins with one question: what is this supposed to do for your business? Then we build the website, the campaign, and the content that actually gets it done — designed around your goal, measured by whether it worked.</p>
+      <div class="cta-row">
+        <a class="btn-gold" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">START WITH A FREE CONSULTATION</a>
+        <a class="btn-outline" href="/templates/">SEE WEBSITES WE'VE BUILT</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-row gold">
+    <div class="svc-visual">🌐</div>
+    <div class="svc-body">
+      <div class="kicker">SERVICE 01</div>
+      <h2>Web Design &amp; Development</h2>
+      <p>Your website is the one salesperson who never sleeps — it should look the part and close the deal. We design and build fast, mobile-first sites that turn visitors into customers, and every package is priced $100 under the going rate for its tier. No inflated quotes, no mystery fees: pick your tier, we build it, you launch it.</p>
+      <div class="chips">
+        <div class="chip"><div class="n">STARTER</div><div class="p">$390</div></div>
+        <div class="chip"><div class="n">BUSINESS</div><div class="p">$690</div></div>
+        <div class="chip"><div class="n">PREMIUM</div><div class="p">$1,390</div></div>
+        <div class="chip"><div class="n">ONLINE STORE</div><div class="p">$1,399 <small>from</small></div></div>
+      </div>
+      <a class="go" href="https://pureart2000.com/templates/">Browse live website examples →</a>
+    </div>
+  </div>
+
+  <div class="svc-row flip gold">
+    <div class="svc-visual">📣</div>
+    <div class="svc-body">
+      <div class="kicker">SERVICE 02 · MOST REQUESTED</div>
+      <h2>Promotion Campaigns &amp; Social Media Marketing</h2>
+      <p>Posting and hoping isn't a strategy. We plan, produce, and post short-form video campaigns — reels and Shorts built around one clear offer, one clear audience, and one clear next step — across Facebook, Instagram, TikTok, YouTube, and Threads. Every campaign is built to drive people somewhere that matters: your store, your booking page, your link. You run your business; we keep your name in the feed, working.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Plan your campaign →</a>
+    </div>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-visual">🎬</div>
+    <div class="svc-body">
+      <div class="kicker">SERVICE 03</div>
+      <h2>AI Content &amp; Video Production</h2>
+      <p>Studio-quality content without the studio-sized invoice. We produce AI presenter videos, animated promos, and UGC-style product videos that feel human, hold attention in the first two seconds, and end with your offer on screen. It's the same production engine behind our own channels — pointed at your product.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Get content made for you →</a>
+    </div>
+  </div>
+
+  <div class="svc-row flip">
+    <div class="svc-visual">🔎</div>
+    <div class="svc-body">
+      <div class="kicker">SERVICE 04</div>
+      <h2>SEO &amp; Online Visibility</h2>
+      <p>The best offer in the world can't sell if nobody finds it. We get your business showing up where customers actually look: search results, directory listings, and your Google presence — set up properly, written clearly, and kept consistent everywhere your name appears online, so "near me" searches find you first.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Get found online →</a>
+    </div>
+  </div>
+
+  <div class="svc-row">
+    <div class="svc-visual">🛍️</div>
+    <div class="svc-body">
+      <div class="kicker">SERVICE 05</div>
+      <h2>Digital Products &amp; Online Stores</h2>
+      <p>Got knowledge, art, or a product the world should be able to buy at 2 a.m.? We set up your store and your digital products — books, guides, downloads, and more — on platforms like Stan.store, with product pages written to sell and a checkout that just works. Build it once, sell it while you sleep.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Open your store →</a>
+    </div>
+  </div>
+
+  <div class="svc-row flip">
+    <div class="svc-visual">🧩</div>
+    <div class="svc-body">
+      <div class="kicker">SERVICE 06</div>
+      <h2>Content Management &amp; Apps</h2>
+      <p>Launching is the easy part — staying consistent is where most businesses stall. We manage your ongoing content so your pages never go quiet, and build app solutions that tie your site, store, and socials into one system that runs itself. You stay the face of the brand; we keep the machine fed.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Keep it running →</a>
+    </div>
+  </div>
+
+  <div class="consult">
+    <div class="kicker">NOT SURE WHERE TO START?</div>
+    <h2>Let's figure it out together.</h2>
+    <p>Book a free consultation and we'll map out exactly what your business needs first — the site, the campaign, or the content — before you spend a dollar on the wrong thing.</p>
+    <div class="cta-row">
+      <a class="btn-gold" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">BOOK YOUR FREE CONSULTATION</a>
+      <a class="btn-outline" href="https://pureart2000.com/">BACK TO THE HUB</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>Contact: <a href="mailto:pureart2000llc@gmail.com">pureart2000llc@gmail.com</a> · <a href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Linktree</a></div>
+  <div class="credit">Created by Pureart2000</div>
+</footer>
+</body>
+</html>
