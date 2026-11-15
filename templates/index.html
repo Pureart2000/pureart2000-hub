@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#090914">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Website Examples — Pureart2000 Template Gallery</title>
 <meta name="description" content="See what Pureart2000 builds: live demo websites for restaurants, barbershops, bars & clubs and roofing companies. Packages from $390.">
 <style>
@@ -143,5 +149,6 @@
   <div>All eight businesses are fictional demos created to showcase Pureart2000 website design.</div>
   <div class="credit">Created by Pureart2000</div>
 </footer>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script>
 </body>
 </html>
