@@ -1,10 +1,17 @@
 // Pureart2000 service worker — app-shell cache + offline fallback only.
 // No tracking, no analytics, no third-party requests.
-const CACHE = 'pureart2000-shell-v1';
-const SHELL = ['/', '/index.html', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png', '/apple-touch-icon.png'];
+const CACHE = 'pureart2000-shell-v2';
+const SHELL = ['/', '/index.html', '/manifest.webmanifest'];
+// Icons are cached best-effort: a missing icon must never block SW install.
+const OPTIONAL = ['/icon-192.png', '/icon-512.png', '/apple-touch-icon.png'];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  event.waitUntil(
+    caches.open(CACHE)
+      .then((c) => c.addAll(SHELL)
+        .then(() => Promise.all(OPTIONAL.map((u) => c.add(u).catch(() => {})))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', (event) => {
