@@ -9,8 +9,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Services — Web Design, Promotion Campaigns & AI Content | Pureart2000</title>
-<meta name="description" content="Pureart2000 services: web design & development, promotion campaigns and social media marketing, AI content & video production, SEO, digital products and online stores, content management and apps.">
+<title>Web Design for Local Businesses — $390 Starter Sites | Pureart2000 Services</title>
+<meta name="description" content="Pureart2000 builds fast, professional websites for local businesses — starter sites $390 flat, priced $100 under the going rate, plus a $49/mo care plan. See 8 live demo sites, then book a free consultation.">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:#090914; color:#fff; font-family:'Segoe UI', Arial, sans-serif; }
@@ -50,6 +50,8 @@
   .svc-body .kicker { color:#f5c518; font-weight:700; font-size:13px; letter-spacing:2px; margin-bottom:12px; }
   .svc-body h2 { font-size:34px; font-weight:800; line-height:1.15; margin-bottom:14px; }
   .svc-body p { color:#b3b3c9; font-size:16.5px; line-height:1.6; max-width:640px; }
+  .svc-body ul { color:#b3b3c9; font-size:16.5px; line-height:1.65; max-width:640px; margin:10px 0 0 20px; }
+  .svc-body li { margin-bottom:6px; }
   .svc-body .go { color:#8b5cf6; font-weight:700; font-size:15px; margin-top:18px; display:inline-block; }
   /* Price chips */
   .chips { display:flex; gap:14px; flex-wrap:wrap; margin-top:22px; }
@@ -58,19 +60,50 @@
   .chip .p { font-size:24px; font-weight:800; margin-top:4px; }
   .chip .p small { font-size:13px; color:#b3b3c9; font-weight:400; }
   .fine { color:#b3b3c9; font-size:15px; margin-top:18px; }
+  /* Section headings */
+  h2.sec { font-size:30px; font-weight:800; margin:64px 0 6px; }
+  .rule { width:64px; height:5px; background:#f5c518; border-radius:3px; margin-bottom:10px; }
+  .sub { color:#b3b3c9; font-size:16px; margin-bottom:24px; max-width:820px; line-height:1.6; }
+  /* Proof grid */
+  .proof-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .proof { background:#16132a; border-radius:14px; padding:18px; border-top:4px solid #f5c518; display:block; }
+  .proof:hover { background:#1c1936; }
+  .proof .niche { color:#f5c518; font-weight:700; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; }
+  .proof h3 { font-size:19px; margin:8px 0 6px; color:#fff; }
+  .proof p { color:#b3b3c9; font-size:14px; line-height:1.55; }
+  .proof .go { color:#8b5cf6; font-weight:700; font-size:13.5px; margin-top:12px; display:inline-block; }
+  /* Steps */
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .step { background:#16132a; border-radius:14px; padding:22px; border-top:4px solid #6d28d9; }
+  .step .num { color:#f5c518; font-weight:800; font-size:26px; }
+  .step h3 { font-size:19px; margin:8px 0 8px; }
+  .step p { color:#b3b3c9; font-size:15px; line-height:1.6; }
+  /* FAQ */
+  .faq { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .qa { background:#16132a; border-radius:14px; padding:22px; }
+  .qa h3 { font-size:17.5px; margin-bottom:8px; }
+  .qa p { color:#b3b3c9; font-size:15px; line-height:1.6; }
+  /* More services */
+  .more { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .more .m { background:#16132a; border-radius:14px; padding:20px 22px; }
+  .more .m h3 { font-size:17.5px; margin-bottom:6px; }
+  .more .m h3 span { color:#f5c518; font-size:12px; letter-spacing:1px; font-weight:700; display:block; margin-bottom:6px; }
+  .more .m p { color:#b3b3c9; font-size:15px; line-height:1.6; }
   /* Consultation band */
   .consult { background:linear-gradient(115deg, #2e1065, #14002b); border-radius:18px; padding:52px 44px; margin-top:84px; text-align:center; border:2px solid #f5c518; }
   .consult .kicker { color:#f5c518; font-weight:700; font-size:14px; letter-spacing:2px; margin-bottom:14px; }
   .consult h2 { font-size:40px; font-weight:800; line-height:1.15; }
   .consult p { color:#d8d8e8; font-size:17px; line-height:1.55; max-width:640px; margin:16px auto 0; }
   .consult .cta-row { justify-content:center; }
+  .consult .phone { margin-top:22px; color:#d8d8e8; font-size:16px; }
+  .consult .phone a { color:#f5c518; font-weight:700; }
   /* Footer */
   footer { border-top:2px solid #35324d; margin-top:72px; padding:26px 48px 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:#b3b3c9; font-size:15px; }
   footer a { color:#b3b3c9; }
   footer a:hover { color:#fff; }
   footer .credit { color:#f5c518; font-weight:700; }
-  @media (max-width:1000px){ .wrap{padding:0 20px;} .topbar{padding:14px 20px;} .nav{display:none;} .hero h1{font-size:40px;} .hero .content{padding:48px 28px;} .svc-row,.svc-row.flip{flex-direction:column; align-items:stretch;} .svc-visual{min-height:180px; font-size:64px;} .consult{padding:40px 26px;} .consult h2{font-size:30px;} footer{padding:26px 20px 40px;} }
-  @media (max-width:560px){ .hero h1{font-size:32px;} }
+  @media (max-width:1000px){ .wrap{padding:0 20px;} .topbar{padding:14px 20px;} .nav{display:none;} .hero h1{font-size:40px;} .hero .content{padding:48px 28px;} .svc-row,.svc-row.flip{flex-direction:column; align-items:stretch;} .svc-visual{min-height:180px; font-size:64px;} .proof-grid{grid-template-columns:repeat(2,1fr);} .steps,.faq,.more{grid-template-columns:1fr;} .consult{padding:40px 26px;} .consult h2{font-size:30px;} footer{padding:26px 20px 40px;} }
+  @media (max-width:560px){ .hero h1{font-size:32px;} .proof-grid{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
@@ -85,11 +118,11 @@
 <div class="wrap">
   <div class="hero">
     <div class="content">
-      <div class="kicker">SERVICES · WEB DESIGN · PROMOTION CAMPAIGNS · AI CONTENT</div>
-      <h1>Marketing that starts with <span class="gold">your goal</span> — and doesn't stop at pretty.</h1>
-      <p>Every service at Pureart2000 begins with one question: what is this supposed to do for your business? Then we build the website, the campaign, and the content that actually gets it done — designed around your goal, measured by whether it worked.</p>
+      <div class="kicker">WEB DESIGN FOR LOCAL BUSINESSES · US REMOTE</div>
+      <h1>Your customers Google you before they call you. <span class="gold">What do they find?</span></h1>
+      <p>If the answer is a Facebook page from 2019, a site that breaks on phones, or nothing at all — you're handing jobs to the competitor who shows up first. Pureart2000 builds fast, professional websites for local businesses, priced $100 under the going rate, so the next search ends with your phone ringing.</p>
       <div class="cta-row">
-        <a class="btn-gold" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">START WITH A FREE CONSULTATION</a>
+        <a class="btn-gold" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">BOOK A FREE CONSULTATION</a>
         <a class="btn-outline" href="/templates/">SEE WEBSITES WE'VE BUILT</a>
       </div>
     </div>
@@ -98,82 +131,104 @@
   <div class="svc-row gold">
     <div class="svc-visual">🌐</div>
     <div class="svc-body">
-      <div class="kicker">SERVICE 01</div>
-      <h2>Web Design &amp; Development</h2>
-      <p>Your website is the one salesperson who never sleeps — it should look the part and close the deal. We design and build fast, mobile-first sites that turn visitors into customers, and every package is priced $100 under the going rate for its tier. No inflated quotes, no mystery fees: pick your tier, we build it, you launch it.</p>
+      <div class="kicker">START HERE · MOST POPULAR</div>
+      <h2>The $390 Starter Site</h2>
+      <p>A real website for your business. $390 flat — no surprises. Everything a local business needs to look established and turn searches into calls:</p>
+      <ul>
+        <li>A custom-designed site that works perfectly on phones — where your customers actually find you</li>
+        <li>Your services, prices, photos and story, written and laid out to sell</li>
+        <li>Tap-to-call, directions and a contact form on every page</li>
+        <li>Set up so Google can find and rank you</li>
+        <li>Launched fast — most starter sites are live in about a week once we have your logo, photos and details</li>
+      </ul>
+      <p class="fine">Comparable starter sites run about $490–$500. Ours is $390 — the same professional result, $100 under the going rate.</p>
       <div class="chips">
         <div class="chip"><div class="n">STARTER</div><div class="p">$390</div></div>
         <div class="chip"><div class="n">BUSINESS</div><div class="p">$690</div></div>
         <div class="chip"><div class="n">PREMIUM</div><div class="p">$1,390</div></div>
         <div class="chip"><div class="n">ONLINE STORE</div><div class="p">$1,399 <small>from</small></div></div>
       </div>
-      <a class="go" href="https://pureart2000.com/templates/">Browse live website examples →</a>
+      <p class="fine"><strong style="color:#fff;">Business ($690)</strong> adds booking and detailed service forms, more pages and a Google presence tune-up. <strong style="color:#fff;">Premium ($1,390)</strong> adds advanced features and richer design. <strong style="color:#fff;">Online Stores (from $1,399)</strong> sell for you around the clock. Every tier is priced $100 under the going rate.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Start with a free consultation →</a>
     </div>
   </div>
 
   <div class="svc-row flip gold">
-    <div class="svc-visual">📣</div>
+    <div class="svc-visual">🛡️</div>
     <div class="svc-body">
-      <div class="kicker">SERVICE 02 · MOST REQUESTED</div>
-      <h2>Promotion Campaigns &amp; Social Media Marketing</h2>
-      <p>Posting and hoping isn't a strategy. We plan, produce, and post short-form video campaigns — reels and Shorts built around one clear offer, one clear audience, and one clear next step — across Facebook, Instagram, TikTok, YouTube, and Threads. Every campaign is built to drive people somewhere that matters: your store, your booking page, your link. You run your business; we keep your name in the feed, working.</p>
-      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Plan your campaign →</a>
+      <div class="kicker">NEW · THE CARE PLAN</div>
+      <h2>Your site, handled. $49/month.</h2>
+      <p>A website isn't a one-time purchase — it needs updates, backups and small changes as your business moves. The Pureart2000 Care Plan covers all of it, so you never touch your website again:</p>
+      <ul>
+        <li>Hosting and domain management — renewals handled, nothing expires</li>
+        <li>Security updates and regular backups — if anything ever breaks, we restore it</li>
+        <li>Small edits done for you — new prices, hours, photos, a new service: just ask</li>
+        <li>A monthly check-in report — your site's health and traffic, in plain English</li>
+      </ul>
+      <p class="fine">No contract. Cancel anytime — your site and domain are yours and go with you. Add it to any package, or bring us your existing site.</p>
+      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Ask about the Care Plan at your free consultation →</a>
     </div>
   </div>
 
-  <div class="svc-row">
-    <div class="svc-visual">🎬</div>
-    <div class="svc-body">
-      <div class="kicker">SERVICE 03</div>
-      <h2>AI Content &amp; Video Production</h2>
-      <p>Studio-quality content without the studio-sized invoice. We produce AI presenter videos, animated promos, and UGC-style product videos that feel human, hold attention in the first two seconds, and end with your offer on screen. It's the same production engine behind our own channels — pointed at your product.</p>
-      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Get content made for you →</a>
-    </div>
+  <h2 class="sec">Don't take our word for it. Click around.</h2>
+  <div class="rule"></div>
+  <p class="sub">Eight complete demo websites, built by Pureart2000 — two each for restaurants, barbershops, bars &amp; clubs and roofing companies. Every one is live. Open them on your phone, the way your customers would. (The businesses are fictional demos — the design work is 100% real.)</p>
+  <div class="proof-grid">
+    <a class="proof" href="/templates/saffron-and-smoke/"><div class="niche">Restaurant · Upscale</div><h3>Saffron &amp; Smoke</h3><p>Tasting menus, a chef's counter and moody, ember-glow design.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/nonnos-table/"><div class="niche">Restaurant · Family Italian</div><h3>Nonno's Table</h3><p>Handmade pasta, Sunday sauce and warm, checkerboard charm.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/heritage-cuts/"><div class="niche">Barbershop · Classic</div><h3>Heritage Cuts</h3><p>Service menus, master barbers and since-1984 trust.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/fade-factory/"><div class="niche">Barbershop · Modern Studio</div><h3>Fade Factory</h3><p>Bold design, online booking and a 30-minute chair promise.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/velvet-hour/"><div class="niche">Bar · Cocktail Lounge</div><h3>The Velvet Hour</h3><p>A signature cocktail list, an amber wall of rare spirits, vinyl jazz nightly.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/neon-district/"><div class="niche">Nightclub · Late Night</div><h3>Neon District</h3><p>Weekly signature nights, headliner DJs and bottle service.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/harmon-family-roofing/"><div class="niche">Roofing · Residential</div><h3>Harmon Family Roofing</h3><p>Free photo inspections, straight pricing and a 25-year warranty front and center.</p><span class="go">View the demo →</span></a>
+    <a class="proof" href="/templates/stormshield-roofing/"><div class="niche">Roofing · Commercial / Storm</div><h3>StormShield Roofing Co.</h3><p>24/7 emergency crews, drone surveys and insurance-claim muscle.</p><span class="go">View the demo →</span></a>
   </div>
 
-  <div class="svc-row flip">
-    <div class="svc-visual">🔎</div>
-    <div class="svc-body">
-      <div class="kicker">SERVICE 04</div>
-      <h2>SEO &amp; Online Visibility</h2>
-      <p>The best offer in the world can't sell if nobody finds it. We get your business showing up where customers actually look: search results, directory listings, and your Google presence — set up properly, written clearly, and kept consistent everywhere your name appears online, so "near me" searches find you first.</p>
-      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Get found online →</a>
-    </div>
+  <h2 class="sec">How it works</h2>
+  <div class="rule"></div>
+  <p class="sub">Three steps between you and a website that works as hard as you do.</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Free consultation</h3><p>Tell us about your business and your goal. We map out exactly what your site needs first — before you spend a dollar.</p></div>
+    <div class="step"><div class="num">2</div><h3>We build it</h3><p>Send your logo, photos and details; we design and build your site, with two rounds of revisions included so it comes out right.</p></div>
+    <div class="step"><div class="num">3</div><h3>You launch — we stay on call</h3><p>Your site goes live, Google can find you, and the $49/mo Care Plan keeps it updated, backed up and working while you run your business.</p></div>
   </div>
 
-  <div class="svc-row">
-    <div class="svc-visual">🛍️</div>
-    <div class="svc-body">
-      <div class="kicker">SERVICE 05</div>
-      <h2>Digital Products &amp; Online Stores</h2>
-      <p>Got knowledge, art, or a product the world should be able to buy at 2 a.m.? We set up your store and your digital products — books, guides, downloads, and more — on platforms like Stan.store, with product pages written to sell and a checkout that just works. Build it once, sell it while you sleep.</p>
-      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Open your store →</a>
-    </div>
+  <h2 class="sec">Questions, answered straight</h2>
+  <div class="rule"></div>
+  <p class="sub">No fine print, no mystery fees.</p>
+  <div class="faq">
+    <div class="qa"><h3>How long does it take?</h3><p>Most starter sites launch in about a week once we have your logo, photos and business details. Bigger packages and stores take a little longer — you'll get a straight timeline at your consultation, before you commit.</p></div>
+    <div class="qa"><h3>What if I want changes?</h3><p>Every package includes two rounds of revisions during the build. After launch, Care Plan members get small edits done for them as part of the plan — new prices, hours, photos, services.</p></div>
+    <div class="qa"><h3>Who owns the website?</h3><p>You do — your site, your domain, your content. 100%. If you ever move on, everything goes with you. We build it; we never hold it hostage.</p></div>
+    <div class="qa"><h3>I already have a website. Can you fix it?</h3><p>Yes — redesigns and rebuilds are most of what we do. The consultation starts with an honest look at what you have: if it's worth saving, we'll say so.</p></div>
+    <div class="qa"><h3>Do I have to be local?</h3><p>No. Pureart2000 works US Remote — everything happens by call, message and screen-share. Local attention, no office visit required.</p></div>
+    <div class="qa"><h3>How do I pay?</h3><p>A deposit starts the build, the balance is due at launch. Details are confirmed in writing before any work begins — no mystery fees, ever.</p></div>
   </div>
 
-  <div class="svc-row flip">
-    <div class="svc-visual">🧩</div>
-    <div class="svc-body">
-      <div class="kicker">SERVICE 06</div>
-      <h2>Content Management &amp; Apps</h2>
-      <p>Launching is the easy part — staying consistent is where most businesses stall. We manage your ongoing content so your pages never go quiet, and build app solutions that tie your site, store, and socials into one system that runs itself. You stay the face of the brand; we keep the machine fed.</p>
-      <a class="go" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Keep it running →</a>
-    </div>
+  <h2 class="sec">More from Pureart2000</h2>
+  <div class="rule"></div>
+  <p class="sub">The website is the foundation. These build on it.</p>
+  <div class="more">
+    <div class="m"><h3><span>MOST REQUESTED ADD-ON</span>Promotion Campaigns &amp; Social Media</h3><p>Short-form video campaigns across Facebook, Instagram, TikTok, YouTube and Threads — built around one clear offer, one clear audience and one clear next step.</p></div>
+    <div class="m"><h3><span>CONTENT</span>AI Content &amp; Video Production</h3><p>AI presenter videos, animated promos and UGC-style product videos that hold attention in the first two seconds — without the studio-sized invoice.</p></div>
+    <div class="m"><h3><span>VISIBILITY</span>SEO &amp; Online Visibility</h3><p>Search results, directory listings and your Google presence — set up properly and kept consistent, so "near me" searches find you first.</p></div>
+    <div class="m"><h3><span>SELLING</span>Digital Products &amp; Online Stores</h3><p>Storefronts and product pages for creators and sellers — books, guides and downloads on platforms like Stan.store, with checkout that just works.</p></div>
   </div>
 
   <div class="consult">
     <div class="kicker">NOT SURE WHERE TO START?</div>
-    <h2>Let's figure it out together.</h2>
-    <p>Book a free consultation and we'll map out exactly what your business needs first — the site, the campaign, or the content — before you spend a dollar on the wrong thing.</p>
+    <h2>Let's figure it out together — free.</h2>
+    <p>Book a free consultation and we'll map out exactly what your business needs first: the site, the fix, or the plan to grow it. You'll leave with a clear next step whether you hire us or not.</p>
     <div class="cta-row">
       <a class="btn-gold" href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">BOOK YOUR FREE CONSULTATION</a>
-      <a class="btn-outline" href="https://pureart2000.com/">BACK TO THE HUB</a>
+      <a class="btn-outline" href="https://lp.constantcontactpages.com/sl/cfPTLkU" target="_blank" rel="noopener">USE THE CONSULTATION FORM</a>
     </div>
+    <div class="phone">Prefer to talk? Call <a href="tel:+14407941031">(440) 794-1031</a></div>
   </div>
 </div>
 
 <footer>
-  <div>Contact: <a href="mailto:pureart2000llc@gmail.com">pureart2000llc@gmail.com</a> · <a href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Linktree</a></div>
+  <div>Contact: <a href="mailto:pureart2000llc@gmail.com">pureart2000llc@gmail.com</a> · <a href="tel:+14407941031">(440) 794-1031</a> · <a href="https://linktr.ee/pureart2000" target="_blank" rel="noopener">Linktree</a></div>
   <div class="credit">Created by Pureart2000</div>
 </footer>
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script>
